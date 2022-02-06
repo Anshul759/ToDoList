@@ -21,7 +21,20 @@ class ToDoList extends React.Component{
         });
     }
 
-    handleClick(){
+    onlySpaces(str) {
+        return str.trim().length === 0;
+    }
+
+    handleClick()
+    {
+        if(this.onlySpaces(this.state.taskname))
+        {
+            alert('Cant add blank item');
+            this.setState({
+                taskname : ""
+            });
+            return;
+        }
         this.setState((prevState) => ({
             taskList : [...prevState.taskList,this.state.taskname],
             taskname : ""
