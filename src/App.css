@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
 .App {
   text-align: center;
+  background-color: #16161a;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.heading{
+  font-family: 'Permanent Marker', cursive;
+  color: white;
 }
 
 .App-logo {
