@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+.input_div,.task_main_div{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #94a1b2;
+
+}
+
+.list_div{
+    height: 60vh;
+    overflow: auto;
+    box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+
+.remove_button{
+    padding: 5px;
+    margin: auto 0;
+    border: none;
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: #fffffe;
+    font-size: 20px;
+}
+
+.add_button{
+    padding: 5px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    font-size: 20px;
+    color: #fffffe;
+    background-color: #2cb67d;
+}
+
+.task_input{
+    padding: 10px;
+    margin: auto 10px;
+    height: 100%;
+    width: 85%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #7f5af0;
+    color: #fffffe;
+    font-size: 25px;
+    font-family: 'Supermercado One', cursive;
+}
+
+.task_input::placeholder{
+    color: #94a1b2;
+    font-family: 'Supermercado One', cursive;
+}
+
+.task_input:focus{
+    outline: none;
+}
+
+.li_item{
+    font-size: 20px;
+    list-style: none;
+    color: #7f5af0;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    overflow-wrap: break-word;
+    font-family: 'Supermercado One', cursive;
+}
+
