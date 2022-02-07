@@ -1,6 +1,7 @@
 import React from "react";
 import List from "./List";
 import './styles.css'
+import { BsCheck2All } from "react-icons/bs";
 
 class ToDoList extends React.Component{
     constructor(props){
@@ -12,6 +13,7 @@ class ToDoList extends React.Component{
         this.handleInput=this.handleInput.bind(this);
         this.handleClick=this.handleClick.bind(this);
         this.handleDelete=this.handleDelete.bind(this);
+        this.handleAllClick=this.handleAllClick.bind(this);
     }
 
 
@@ -41,6 +43,12 @@ class ToDoList extends React.Component{
         }));
     }
 
+    handleAllClick(){
+        this.setState({
+            taskList : []
+        });
+    }
+
     handleDelete(e){
         this.setState( (prevState) => ({
             taskList : prevState.taskList.filter((value,index) => index !== e)
@@ -61,6 +69,10 @@ class ToDoList extends React.Component{
                     <button 
                         className="add_button"
                         onClick={this.handleClick}> +   
+                    </button>
+                    <button 
+                        className="doneall_button"
+                        onClick={this.handleAllClick}> <BsCheck2All />
                     </button>
                 </div>
                 <div className="list_div">

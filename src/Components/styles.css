@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 .input_div,.task_main_div{
     padding: 10px;
     display: flex;
@@ -12,22 +16,19 @@
     overflow: auto;
     box-sizing: content-box;
 }
-
-::-webkit-scrollbar {
-    width: 0px;
-}
   
 .remove_button 
 {
-    font-size:30px;
+    font-size:1.5vw;
     font-family:Courier New;
-    width:63px;
-    height:64px;
+    width:4vw;
+    height:4vw;
     border-width:0px;
     color:#fff;
+    margin: 5px;
     border-color:#d02718;
     font-weight:bold;
-    border-radius:42px;
+    border-radius:50%;
     text-shadow: 0px 1px 0px #810e05;
     background:linear-gradient(#c62d1f, #f24437);
 }
@@ -37,27 +38,39 @@
 }
                 
 .add_button {
-    font-size:31px;
+    font-size:2.5vw;
     font-family:Courier New;
-    width:63px;
-    height:62px;
+    width:5vw;
+    height:5vw;
     border-width:0px;
+    margin: 5px;
     color:#fff;
     font-weight:bold;
-    border-radius:42px;
+    border-radius:20%;
     background:#2cb67d;
+}
+
+.doneall_button {
+    font-size:2vw;
+    width:5vw;
+    height:5vw;
+    border-width:0px;
+    margin: 5px;
+    color:#fff;
+    border-radius:20%;
+    background: #7f5af0;
 }
 
 .task_input{
     padding: 10px;
     margin: auto 10px;
     height: 100%;
-    width: 85%;
+    width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #7f5af0;
     color: #fffffe;
-    font-size: 25px;
+    font-size: 2.5vw;
     font-family: 'Supermercado One', cursive;
 }
 
@@ -71,12 +84,12 @@
 }
 
 .li_item{
-    font-size: 20px;
+    font-size: 2vw;
     list-style: none;
     color: #7f5af0;
     margin: auto;
     text-align: left;
-    width: 80%;
+    width: 100%;
     overflow-wrap: break-word;
     font-family: 'Supermercado One', cursive;
 }
